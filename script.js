@@ -14,6 +14,13 @@ console.log(imprimirMayus('hola que tal'));
 /*Ejercicio 2
 Declara una función que acepte un nombre como parámetro y devuelva el número de palabras que tiene el nombre. Ejemplo: Para "Antonio Alberto Jesús" devolverá 3.*/
 
-function contarNombre(nombre){
-    
+function contarNombre(nombre) {
+    let contador = 1;
+    for (let i = 0; i < nombre.length; i++) {
+        if (nombre[i] === " ") {
+            contador++;
+        }
+    }
+    return contador;
 }
+console.log(contarNombre("Stephani Damiani Kaemena"))
